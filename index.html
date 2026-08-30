@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asta &amp; Ikrom — Undangan Pernikahan</title>
+<meta name="description" content="Undangan pernikahan Dinda & Raka, Sabtu 20 Desember 2026 di Jakarta.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="terkunci">
+
+<!-- ============ SAMPUL / COVER ============ -->
+<div class="sampul" id="sampul">
+  <div class="sampul__panel sampul__panel--atas"></div>
+  <div class="sampul__panel sampul__panel--bawah"></div>
+
+  <div class="sampul__isi" id="sampul-isi">
+    <p class="eyebrow">Undangan Pernikahan</p>
+
+    <div class="segel" aria-hidden="true">
+      <svg viewBox="0 0 100 100" class="segel__cincin">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="0.8"/>
+        <circle cx="50" cy="50" r="41" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+      </svg>
+      <span class="segel__inisial">A<span>&amp;</span>I</span>
+    </div>
+
+    <h1 class="sampul__nama">Asta <em>&amp;</em> Ikrom</h1>
+    <p class="sampul__tanggal">Minggu, 04 Oktober 2026</p>
+
+
+    <button class="tombol tombol--utama" id="tombol-buka">Buka undangan</button>
+    <p class="sampul__catatan">Mohon maaf bila ada kesalahan penulisan nama dan gelar.</p>
+  </div>
+</div>
+
+<!-- ============ ISI UNDANGAN ============ -->
+<main class="undangan" id="undangan">
+
+  <!-- HERO -->
+  <section class="bagian hero" id="beranda">
+    <div class="hero__latar" aria-hidden="true"></div>
+    <div class="hero__konten reveal">
+      <p class="eyebrow">Bismillahirrahmanirrahim</p>
+      <h2 class="nama-besar">Asta<br><em>&amp;</em><br>Ikrom</h2>
+      <div class="garis-melati" aria-hidden="true">
+        <svg viewBox="0 0 240 24" fill="none">
+          <path d="M8 12h78" stroke="currentColor" stroke-width="1"/>
+          <path d="M154 12h78" stroke="currentColor" stroke-width="1"/>
+          <path d="M120 4c7 4 10 8 10 8s-3 4-10 8c-7-4-10-8-10-8s3-4 10-8Z" stroke="currentColor" stroke-width="1"/>
+          <path d="M104 12c-3-3-6-4-9-4m9 4c-3 3-6 4-9 4m45-4c3-3 6-4 9-4m-9 4c3 3 6 4 9 4" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          <circle cx="120" cy="12" r="2" fill="currentColor"/>
+        </svg>
+      </div>
+      <p class="hero__tanggal">04 · 10 · 2026</p>
+    </div>
+  </section>
+
+  <!-- MEMPELAI -->
+  <section class="bagian bagian--kertas" id="mempelai">
+    <p class="eyebrow reveal">Assalamu'alaikum Wr. Wb.</p>
+    <p class="paragraf reveal">
+      Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan
+      pernikahan putra-putri kami:
+    </p>
+
+    <article class="mempelai reveal">
+    
+      <h3 class="mempelai__nama">Asta Nurhayani</h3>
+      <p class="mempelai__gelar">S.E.</p>
+      <p class="mempelai__ortu">Putri kesatu dari<br>Bapak Rasid (Alm) &amp; Ibu Herni</p>
+    </article>
+
+    <div class="pemisah" aria-hidden="true"><span>&amp;</span></div>
+
+    <article class="mempelai reveal">
+      </div>
+      <h3 class="mempelai__nama">Ahmad Ikrom Sunny</h3>
+      <p class="mempelai__gelar">S.E.</p>
+      <p class="mempelai__ortu">Putra pertama dari<br>Bapak Sudarsono (Alm) &amp; Ibu Siti Sayekti</p>
+    
+    </article>
+  </section>
+
+  <!-- HITUNG MUNDUR -->
+  <section class="bagian bagian--gelap" id="hitung-mundur">
+    <p class="eyebrow reveal">Menuju hari bahagia</p>
+    <div class="jam reveal" id="jam" data-tanggal="2026-12-20T09:00:00+07:00">
+      <div class="jam__unit"><span class="jam__angka" id="hari">00</span><span class="jam__label">Hari</span></div>
+      <div class="jam__unit"><span class="jam__angka" id="jam-nya">00</span><span class="jam__label">Jam</span></div>
+      <div class="jam__unit"><span class="jam__angka" id="menit">00</span><span class="jam__label">Menit</span></div>
+      <div class="jam__unit"><span class="jam__angka" id="detik">00</span><span class="jam__label">Detik</span></div>
+    </div>
+    <p class="jam__pesan" id="jam-pesan" hidden>Alhamdulillah, hari bahagia telah tiba.</p>
+    <a class="tombol tombol--terang reveal" id="tombol-kalender" href="#">Simpan ke kalender</a>
+  </section>
+
+  <!-- ACARA -->
+  <section class="bagian bagian--kertas" id="acara">
+    <p class="eyebrow reveal">Rangkaian acara</p>
+    <h2 class="judul reveal">Waktu &amp; Tempat</h2>
+
+    <article class="acara reveal">
+      <h3 class="acara__nama">Akad Nikah</h3>
+      <p class="acara__waktu">Minggu, 04 Oktober 2026</p>
+      <p class="acara__jam">08.00 — 09.00 WIB</p>
+      <p class="acara__tempat">Aula Serbaguna Masjid Nurani<br>Jl. I Gusti Ngurah Rai RT. 08 RW. 10 </p>
+        <p class="acara__tempat"> Kel. Kranji Kec. Bekasi Barat - Kota Bekasi </p>
+    </article>
+
+    <article class="acara reveal">
+      <h3 class="acara__nama">Resepsi</h3>
+      <p class="acara__waktu">Minggu, 04 Oktober 2026</p>
+      <p class="acara__jam">11.00 — 13.00 WIB</p>
+      <p class="acara__tempat">Aula Serbaguna Masjid Nurani<br>Jl. I Gusti Ngurah Rai RT. 08 RW. 10 </p>
+      <p class="acara__tempat"> Kel. Kranji Kec. Bekasi Barat - Kota Bekasi </p>
+    </article>
+
+    <a class="tombol tombol--garis reveal" href="https://maps.app.goo.gl/7knG3daWJgiGbJDL6" target="_blank" rel="noopener">Lihat lokasi di peta</a>
+  </section>
+
+
+
+ 
+
+  <!-- AMPLOP DIGITAL -->
+  <section class="bagian bagian--kertas" id="hadiah">
+    <p class="eyebrow reveal">Tanda kasih</p>
+    <h2 class="judul reveal">Amplop Digital</h2>
+    <p class="paragraf reveal">
+      Doa restu Anda sudah lebih dari cukup. Bila ingin memberi tanda kasih,
+      kami menerimanya melalui rekening berikut.
+    </p>
+
+    <div class="rekening reveal">
+      <p class="rekening__bank">Bank BCA</p>
+      <p class="rekening__nomor" id="rek-1">7410486894</p>
+      <p class="rekening__atas-nama">a.n. Asta Nurhayani</p>
+      <button class="tombol tombol--garis salin" data-target="rek-1">Salin nomor rekening</button>
+    </div>
+
+    <div class="rekening reveal">
+      <p class="rekening__bank">Bank Mandiri</p>
+      <p class="rekening__nomor" id="rek-2">1230009702053</p>
+      <p class="rekening__atas-nama">a.n. Ahmad Ikrom Sunny</p>
+      <button class="tombol tombol--garis salin" data-target="rek-2">Salin nomor rekening</button>
+    </div>
+
+    
+  </section>
+
+  <!-- RSVP -->
+  <section class="bagian bagian--kertas" id="rsvp">
+    <p class="eyebrow reveal">Konfirmasi kehadiran</p>
+    <h2 class="judul reveal">RSVP &amp; Ucapan</h2>
+
+    <form class="form reveal" id="form-rsvp" novalidate>
+      <label class="form__label" for="in-nama">Nama</label>
+      <input class="form__input" type="text" id="in-nama" name="nama" placeholder="Nama Anda" required>
+
+      <label class="form__label" for="in-pesan">Ucapan &amp; doa</label>
+      <textarea class="form__input" id="in-pesan" name="pesan" rows="4" placeholder="Tulis ucapan untuk kedua mempelai" required></textarea>
+
+      <span class="form__label">Kehadiran</span>
+      <div class="pilihan">
+        <label class="pilihan__opsi"><input type="radio" name="hadir" value="Hadir" checked><span>Hadir</span></label>
+        <label class="pilihan__opsi"><input type="radio" name="hadir" value="Masih ragu"><span>Masih ragu</span></label>
+        <label class="pilihan__opsi"><input type="radio" name="hadir" value="Tidak hadir"><span>Tidak hadir</span></label>
+      </div>
+
+      <button class="tombol tombol--utama" type="submit">Kirim ucapan</button>
+      <p class="form__status" id="form-status" role="status"></p>
+    </form>
+
+    
+  </section>
+
+  <!-- PENUTUP -->
+  <section class="bagian bagian--gelap penutup">
+    <div class="reveal">
+      <p class="paragraf paragraf--terang">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+        Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.
+      </p>
+      <p class="eyebrow">Wassalamu'alaikum Wr. Wb.</p>
+      <p class="penutup__nama">Asta <em>&amp;</em> Ikrom</p>
+      <p class="penutup__kredit">Beserta keluarga besar kedua mempelai</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>· 2026 ·</p>
+  </footer>
+</main>
+
+<!-- AUDIO -->
+<audio id="Audio" loop preload="none" src="Audio/Lagu.mp3"></audio>
+
+<!-- ============ KONTROL MENGAMBANG ============ -->
+<button class="musik" id="tombol-musik" aria-label="Putar musik" hidden>
+  <svg class="musik__ikon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/>
+  </svg>
+</button>
+<audio id="audio" loop preload="none" src="audio/lagu.mp3"></audio>
+
+<nav class="navigasi" id="navigasi" hidden>
+  <a href="#beranda" class="navigasi__tautan" data-nav>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 10.5 12 4l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
+    <span>Beranda</span>
+  </a>
+  <a href="#acara" class="navigasi__tautan" data-nav>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
+    <span>Acara</span>
+  </a>
+  
+  <a href="#hadiah" class="navigasi__tautan" data-nav>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="9" width="18" height="12" rx="1"/><path d="M2 9h20v3H2zM12 9v12"/><path d="M12 9S9 4 6.5 5.5 9 9 12 9m0 0s3-5 5.5-3.5S15 9 12 9"/></svg>
+    <span>Hadiah</span>
+  </a>
+  <a href="#rsvp" class="navigasi__tautan" data-nav>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span>RSVP</span>
+  </a>
+</nav>
+
+<div class="notif" id="notif" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
