@@ -942,3 +942,50 @@
     .musik.berputar .musik__ikon { animation: none; }
     .sampul__panel { transition-duration: 0.35s; }
   }
+/* =========================================================
+   KUTIPAN AYAT
+   ========================================================= */
+
+.kutipan {
+  max-width: 26rem;
+  margin: 0 auto;
+  padding: 2.4rem 1.6rem 2rem;
+  border-radius: var(--lengkung);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.42));
+  box-shadow: var(--bayang-kartu), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.kutipan__arab {
+  margin: 0;
+  font-family: "Amiri", "Traditional Arabic", serif;
+  font-size: clamp(1.35rem, 5.6vw, 1.7rem);
+  line-height: 2.15;
+  color: var(--biru-tinta);
+}
+
+.kutipan__hias {
+  width: 9rem;
+  margin: 1.6rem auto 1.4rem;
+  color: var(--biru-lembut);
+}
+.kutipan__hias svg { width: 100%; height: auto; display: block; }
+
+.kutipan__terjemah {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.85;
+  font-style: italic;
+  color: var(--abu-biru);
+}
+
+.kutipan__sumber {
+  margin-top: 1.3rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--biru);
+}
