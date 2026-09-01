@@ -8,7 +8,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="terkunci">
@@ -63,6 +63,33 @@
     </div>
   </section>
 
+  <!-- KUTIPAN AYAT -->
+  <section class="bagian bagian--kertas" id="ayat">
+    <p class="eyebrow reveal">Firman Allah SWT</p>
+
+    <figure class="kutipan reveal">
+      <p class="kutipan__arab" lang="ar" dir="rtl">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</p>
+
+      <div class="kutipan__hias" aria-hidden="true">
+        <svg viewBox="0 0 160 16" fill="none">
+          <path d="M6 8h56M98 8h56" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          <path d="M80 2c4.5 3 6 6 6 6s-1.5 3-6 6c-4.5-3-6-6-6-6s1.5-3 6-6Z" stroke="currentColor" stroke-width="1"/>
+          <circle cx="80" cy="8" r="1.4" fill="currentColor"/>
+        </svg>
+      </div>
+
+      <blockquote class="kutipan__terjemah">
+        Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+        pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
+        dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa
+        kasih dan sayang. Sungguh, pada yang demikian itu benar-benar
+        terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+      </blockquote>
+
+      <figcaption class="kutipan__sumber">QS. Ar-Rum : 21</figcaption>
+    </figure>
+  </section>
+
   <!-- MEMPELAI -->
   <section class="bagian bagian--kertas" id="mempelai">
     <p class="eyebrow reveal">Assalamu'alaikum Wr. Wb.</p>
@@ -73,14 +100,14 @@
 
     <article class="mempelai reveal">
     
-      <h3 class="mempelai__nama">Asta Nurhayani.S.E</h3>
+      <h3 class="mempelai__nama">Asta Nurhayani, S.E.</h3>
       <p class="mempelai__ortu">Putri Pertama dari<br>Bapak Rasid (Alm) &amp; Ibu Herni</p>
     </article>
 
     <div class="pemisah" aria-hidden="true"><span>&amp;</span></div>
 
     <article class="mempelai reveal">
-      <h3 class="mempelai__nama">Ahmad Ikrom Sunny.S.E</h3>
+      <h3 class="mempelai__nama">Ahmad Ikrom Sunny, S.E.</h3>
       <p class="mempelai__ortu">Putra pertama dari<br>Bapak Sudarsono (Alm) &amp; Ibu Siti Sayekti</p>
     </article>
   </section>
@@ -153,9 +180,6 @@
   </section>
 
 
-    <div class="ucapan" id="daftar-ucapan"></div>
-  </section>
-
   <!-- PENUTUP -->
   <section class="bagian bagian--gelap penutup">
     <div class="reveal">
@@ -185,16 +209,16 @@
 
 <nav class="navigasi" id="navigasi" hidden>
   <a href="#beranda" class="navigasi__tautan" data-nav>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 10.5 12 4l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.2 12 3.5l8.5 6.7v9.4a.9.9 0 0 1-.9.9h-4.6v-6.1H9.1v6.1H4.4a.9.9 0 0 1-.9-.9z"/></svg>
     <span>Beranda</span>
   </a>
   <a href="#acara" class="navigasi__tautan" data-nav>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="15" rx="2"/><path d="M8 3.5v4M16 3.5v4M3.5 10.5h17"/></svg>
     <span>Acara</span>
   </a>
   
   <a href="#hadiah" class="navigasi__tautan" data-nav>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="9" width="18" height="12" rx="1"/><path d="M2 9h20v3H2zM12 9v12"/><path d="M12 9S9 4 6.5 5.5 9 9 12 9m0 0s3-5 5.5-3.5S15 9 12 9"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="9.8" width="17" height="10.7" rx="1.2"/><path d="M3.5 13.4h17M12 9.8v10.7"/><path d="M12 9.8S9.5 2.9 7.0 4.6 9.1 9.8 12 9.8m0 0s2.5-6.9 5-5.2S14.9 9.8 12 9.8"/></svg>
     <span>Hadiah</span>
   </a>
 
