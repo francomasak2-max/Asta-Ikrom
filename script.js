@@ -5,9 +5,9 @@
 
    const PENGATURAN = {
     namaMempelai: "Asta & Ikrom",
-    tanggalAcara: "2026-10-04T04:00:00+07:00",
-    selesaiAcara: "2026-10-04T04:00:00+07:00",
-    lokasi: "Aula Serbaguna Masjid Nurani",
+    tanggalAcara: "2026-10-04T08:00:00+07:00",
+    selesaiAcara: "2026-10-04T13:00:00+07:00",
+    lokasi: "Aula Serbaguna Masjid Nurani, Jl. I Gusti Ngurah Rai RT. 08 RW. 10, Kel. Kranji, Kec. Bekasi Barat, Kota Bekasi",
     // Isi dengan URL Google Apps Script / Formspree bila ingin ucapan tersimpan.
     urlRsvp: ""
   };
@@ -16,11 +16,16 @@
      1. Nama tamu dari URL  →  index.html?to=Budi%20Santoso
      --------------------------------------------------------- */
   (function isiNamaTamu() {
+    const wadah = document.getElementById("nama-tamu");
+    const kartu = document.getElementById("kartu-tamu");
+    if (!wadah) return;
+
     const param = new URLSearchParams(location.search);
-    const nama = param.get("to") || param.get("kepada");
-    if (nama) {
-      document.getElementById("nama-tamu").textContent = decodeURIComponent(nama);
-    }
+    const nama = (param.get("to") || param.get("kepada") || "").trim();
+    if (!nama) return;
+
+    wadah.textContent = nama;
+    if (kartu) kartu.hidden = false;
   })();
   
   /* ---------------------------------------------------------
@@ -181,68 +186,7 @@
     });
   });
   
-  /* ---------------------------------------------------------
-     9. Formulir RSVP
-     --------------------------------------------------------- */
-  (function rsvp() {
-    const form = document.getElementById("form-rsvp");
-    const status = document.getElementById("form-status");
-    const daftar = document.getElementById("daftar-ucapan");
-  
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-  
-      const nama = form.nama.value.trim();
-      const pesan = form.pesan.value.trim();
-      const hadir = form.hadir.value;
-  
-      if (!nama || !pesan) {
-        status.textContent = "Nama dan ucapan belum diisi.";
-        return;
-      }
-  
-      status.textContent = "Mengirim…";
-  
-      if (PENGATURAN.urlRsvp) {
-        try {
-          await fetch(PENGATURAN.urlRsvp, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ nama, pesan, hadir, waktu: new Date().toISOString() })
-          });
-        } catch {
-          status.textContent = "Gagal mengirim. Periksa koneksi lalu coba lagi.";
-          return;
-        }
-      }
-  
-      tambahUcapan(nama, pesan, hadir);
-      form.reset();
-      status.textContent = "Terima kasih, ucapan Anda sudah kami terima.";
-      tampilkanNotif("Ucapan terkirim.");
-    });
-  
-    function tambahUcapan(nama, pesan, hadir) {
-      const item = document.createElement("article");
-      item.className = "ucapan__item";
-  
-      const judul = document.createElement("p");
-      judul.className = "ucapan__nama";
-      judul.textContent = nama;
-  
-      const tanda = document.createElement("span");
-      tanda.className = "ucapan__tanda";
-      tanda.textContent = hadir;
-      judul.appendChild(tanda);
-  
-      const teks = document.createElement("p");
-      teks.className = "ucapan__teks";
-      teks.textContent = pesan;
-  
-      item.append(judul, teks);
-      daftar.prepend(item);
-    }
-  })();
+ 
   
   /* ---------------------------------------------------------
      10. Foto yang belum ada → tampilkan penanda

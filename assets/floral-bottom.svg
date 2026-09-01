@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260">
+<defs>
+ <radialGradient id="w" cx=".5" cy=".4"><stop stop-color="#fff"/><stop offset=".8" stop-color="#eaf8fb"/><stop offset="1" stop-color="#cdebf1"/></radialGradient>
+ <radialGradient id="b" cx=".5" cy=".45"><stop stop-color="#e9fbff"/><stop offset=".45" stop-color="#9cdeea"/><stop offset="1" stop-color="#3e9eb9"/></radialGradient>
+ <linearGradient id="l"><stop stop-color="#c3edf3"/><stop offset=".6" stop-color="#579eaf"/><stop offset="1" stop-color="#246778"/></linearGradient>
+ <filter id="s"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#247487" flood-opacity=".16"/></filter>
+</defs>
+<path d="M15 230 C190 155 300 175 450 115 C585 62 710 115 885 25" fill="none" stroke="url(#l)" stroke-width="6" stroke-linecap="round"/>
+<g fill="url(#l)">
+ <ellipse cx="145" cy="188" rx="15" ry="40" transform="rotate(65 145 188)"/>
+ <ellipse cx="250" cy="165" rx="15" ry="40" transform="rotate(-50 250 165)"/>
+ <ellipse cx="585" cy="92" rx="15" ry="42" transform="rotate(42 585 92)"/>
+ <ellipse cx="760" cy="80" rx="16" ry="44" transform="rotate(-42 760 80)"/>
+</g>
+<g transform="translate(155 160)" filter="url(#s)">
+ <g fill="url(#b)">
+  <ellipse rx="45" ry="18"/><ellipse rx="45" ry="18" transform="rotate(45)"/>
+  <ellipse rx="45" ry="18" transform="rotate(90)"/><ellipse rx="45" ry="18" transform="rotate(135)"/>
+  <ellipse rx="31" ry="14" transform="rotate(22)"/><ellipse rx="31" ry="14" transform="rotate(67)"/>
+ </g><circle r="13" fill="#f0dbab"/>
+</g>
+<g transform="translate(440 112)" filter="url(#s)">
+ <g fill="url(#w)">
+  <ellipse rx="50" ry="20"/><ellipse rx="50" ry="20" transform="rotate(45)"/>
+  <ellipse rx="50" ry="20" transform="rotate(90)"/><ellipse rx="50" ry="20" transform="rotate(135)"/>
+  <ellipse rx="34" ry="15" transform="rotate(22)"/><ellipse rx="34" ry="15" transform="rotate(67)"/>
+ </g><circle r="14" fill="#f0dcaa"/>
+</g>
+<g transform="translate(705 82)" filter="url(#s)">
+ <g fill="url(#b)">
+  <ellipse rx="43" ry="17"/><ellipse rx="43" ry="17" transform="rotate(45)"/>
+  <ellipse rx="43" ry="17" transform="rotate(90)"/><ellipse rx="43" ry="17" transform="rotate(135)"/>
+  <ellipse rx="29" ry="13" transform="rotate(22)"/><ellipse rx="29" ry="13" transform="rotate(67)"/>
+ </g><circle r="12" fill="#f0dcaa"/>
+</g>
+</svg>
