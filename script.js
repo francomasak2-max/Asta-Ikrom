@@ -7,7 +7,7 @@
     namaMempelai: "Asta & Ikrom",
     tanggalAcara: "2026-10-04T04:00:00+07:00",
     selesaiAcara: "2026-10-04T04:00:00+07:00",
-    lokasi: "Balai Kartini, Jl. Gatot Subroto Kav. 37, Jakarta Selatan",
+    lokasi: "Aula Serbaguna Masjid Nurani",
     // Isi dengan URL Google Apps Script / Formspree bila ingin ucapan tersimpan.
     urlRsvp: ""
   };

@@ -5,14 +5,14 @@
    ========================================================= */
 
    :root {
-    --pinus:      #14312B;
-    --tinta:      #0B1F1B;
-    --kertas:     #EDEFE6;
-    --kertas-tua: #DFE3D5;
-    --melati:     #FBFCF8;
-    --kuningan:   #B08C4F;
-    --kuningan-t: #D8BC85;
-    --abu:        #6C7A70;
+    --pinus:      #0B6F8A;
+    --tinta:      #063B4A;
+    --kertas:     #EAFBFF;
+    --kertas-tua: #CDEFF7;
+    --melati:     #FFFFFF;
+    --kuningan:   #28B8D6;
+    --kuningan-t: #8DE5F2;
+    --abu:        #52727A;
   
     --display: "Fraunces", Georgia, serif;
     --teks:    "Karla", system-ui, -apple-system, sans-serif;
@@ -827,3 +827,386 @@
     }
     .reveal { opacity: 1; transform: none; }
   }
+/* ICE BLUE FLORAL DECORATIONS */
+.undangan::before,.undangan::after{content:"";position:absolute;width:170px;height:170px;pointer-events:none;z-index:4;opacity:.62;background:radial-gradient(circle at 50% 12%,rgba(40,184,214,.55) 0 8%,transparent 9%),radial-gradient(circle at 84% 32%,rgba(40,184,214,.42) 0 9%,transparent 10%),radial-gradient(circle at 78% 75%,rgba(141,229,242,.7) 0 10%,transparent 11%),radial-gradient(circle at 28% 82%,rgba(40,184,214,.38) 0 8%,transparent 9%),radial-gradient(circle at 22% 35%,rgba(141,229,242,.55) 0 10%,transparent 11%);}
+.undangan::before{top:10px;left:-58px;transform:rotate(-18deg)}.undangan::after{top:10px;right:-58px;transform:rotate(18deg) scaleX(-1)}
+.bagian--kertas,.bagian--gelap,.hero{position:relative}.bagian--kertas::before,.bagian--kertas::after,.bagian--gelap::before,.bagian--gelap::after{content:"❀";position:absolute;font-family:Georgia,serif;font-size:4rem;line-height:1;pointer-events:none;opacity:.22;color:var(--kuningan)}
+.bagian--kertas::before{top:18px;left:10px;transform:rotate(-15deg)}.bagian--kertas::after{bottom:18px;right:10px;transform:rotate(20deg)}.bagian--gelap::before{top:18px;right:10px;transform:rotate(15deg)}.bagian--gelap::after{bottom:18px;left:10px;transform:rotate(-20deg)}
+.hero::before,.hero::after{content:"✿";position:absolute;font-family:Georgia,serif;font-size:5rem;color:var(--kuningan);opacity:.20;pointer-events:none}.hero::before{top:7%;left:5%;transform:rotate(-20deg)}.hero::after{bottom:7%;right:5%;transform:rotate(20deg)}
+.sampul::before,.sampul::after{content:"✿";position:absolute;z-index:4;font-family:Georgia,serif;font-size:4.5rem;color:var(--kuningan);opacity:.35;pointer-events:none}.sampul::before{top:8%;left:8%;transform:rotate(-18deg)}.sampul::after{bottom:8%;right:8%;transform:rotate(18deg)}
+.acara,.rekening{border-color:rgba(40,184,214,.22);box-shadow:0 12px 30px rgba(6,59,74,.07)}.tombol--utama{box-shadow:0 8px 22px rgba(40,184,214,.22)}.tombol--utama:hover{box-shadow:0 10px 28px rgba(40,184,214,.32)}
+@media (max-width:480px){.undangan::before,.undangan::after{width:120px;height:120px}.bagian--kertas::before,.bagian--kertas::after,.bagian--gelap::before,.bagian--gelap::after{font-size:3rem}}
+
+
+/* =========================================================
+   PREMIUM ICE BLUE — LUXURY FLORAL EDITION
+   ========================================================= */
+
+:root {
+  --pinus: #16495b;
+  --tinta: #071f2a;
+  --kertas: #f4fbfd;
+  --kertas-tua: #dceff4;
+  --melati: #ffffff;
+  --kuningan: #7bd8e8;
+  --kuningan-t: #c2f3f8;
+  --abu: #58727d;
+
+  --ice-deep: #0b6075;
+  --ice: #83e3ef;
+  --ice-soft: #dff8fb;
+  --ice-glow: rgba(131, 227, 239, .32);
+}
+
+/* soft luxury paper texture */
+body {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(131,227,239,.14), transparent 28rem),
+    radial-gradient(circle at 80% 90%, rgba(194,243,248,.12), transparent 30rem),
+    var(--tinta);
+}
+
+.undangan {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(131,227,239,.12), transparent 22rem),
+    radial-gradient(circle at 90% 70%, rgba(131,227,239,.10), transparent 25rem),
+    var(--kertas);
+}
+
+/* ---------- Floral ornaments ---------- */
+.bagian,
+.hero,
+.penutup {
+  position: relative;
+  isolation: isolate;
+}
+
+.bagian::before,
+.bagian::after,
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: .78;
+  background:
+    radial-gradient(ellipse at 50% 18%, rgba(255,255,255,.96) 0 14%, transparent 15%),
+    radial-gradient(ellipse at 82% 48%, rgba(194,243,248,.92) 0 13%, transparent 14%),
+    radial-gradient(ellipse at 50% 82%, rgba(255,255,255,.96) 0 14%, transparent 15%),
+    radial-gradient(ellipse at 18% 48%, rgba(194,243,248,.92) 0 13%, transparent 14%),
+    radial-gradient(circle at 50% 50%, #8edee9 0 8%, transparent 9%);
+  filter: drop-shadow(0 7px 12px rgba(11,96,117,.13));
+  border-radius: 50%;
+}
+
+.bagian::before,
+.hero::before {
+  top: -25px;
+  left: -28px;
+  transform: rotate(-18deg);
+}
+
+.bagian::after,
+.hero::after {
+  right: -30px;
+  bottom: -25px;
+  transform: rotate(24deg) scale(.82);
+}
+
+.bagian > *,
+.hero > *,
+.penutup > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* elegant leaf stems */
+.bagian--kertas::before {
+  background:
+    radial-gradient(ellipse at 50% 18%, rgba(255,255,255,.98) 0 13%, transparent 14%),
+    radial-gradient(ellipse at 82% 48%, rgba(194,243,248,.95) 0 12%, transparent 13%),
+    radial-gradient(ellipse at 50% 82%, rgba(255,255,255,.98) 0 13%, transparent 14%),
+    radial-gradient(ellipse at 18% 48%, rgba(194,243,248,.95) 0 12%, transparent 13%),
+    radial-gradient(circle at 50% 50%, #7bd8e8 0 8%, transparent 9%),
+    linear-gradient(135deg, transparent 48%, rgba(76,157,172,.22) 49% 51%, transparent 52%);
+}
+
+/* ---------- Cover ---------- */
+.sampul__panel {
+  background:
+    radial-gradient(circle at 50% 45%, rgba(131,227,239,.17), transparent 45%),
+    linear-gradient(145deg, #062532, #0a4050 55%, #071f2a);
+}
+
+.sampul__isi {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(131,227,239,.18), transparent 42%),
+    radial-gradient(circle at 12% 15%, rgba(255,255,255,.08), transparent 22%),
+    transparent;
+}
+
+.sampul__isi::before,
+.sampul__isi::after {
+  content: "✿";
+  position: absolute;
+  font-size: 5.5rem;
+  color: rgba(194,243,248,.16);
+  font-family: Georgia, serif;
+  pointer-events: none;
+}
+
+.sampul__isi::before { top: 8%; left: 7%; transform: rotate(-18deg); }
+.sampul__isi::after { bottom: 8%; right: 7%; transform: rotate(18deg); }
+
+.segel {
+  color: var(--ice);
+  filter: drop-shadow(0 0 14px rgba(131,227,239,.28));
+}
+
+.sampul__nama em,
+.nama-besar em,
+.penutup__nama em {
+  color: var(--ice);
+  text-shadow: 0 0 18px rgba(131,227,239,.35);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background:
+    radial-gradient(circle at 50% 35%, rgba(126,224,237,.20), transparent 36%),
+    linear-gradient(145deg, #061f2b, #0b4c5f 60%, #062532);
+}
+
+.hero__latar {
+  background:
+    radial-gradient(circle at 50% 30%, rgba(131,227,239,.20), transparent 58%),
+    repeating-linear-gradient(115deg, rgba(194,243,248,.035) 0 1px, transparent 1px 24px);
+}
+
+.hero__konten::before {
+  content: "❀";
+  position: absolute;
+  left: 50%;
+  top: -7.5rem;
+  transform: translateX(-50%);
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  color: rgba(194,243,248,.5);
+}
+
+.garis-melati {
+  color: var(--ice);
+  filter: drop-shadow(0 0 7px rgba(131,227,239,.25));
+}
+
+/* ---------- Sections ---------- */
+.bagian--kertas {
+  background:
+    linear-gradient(rgba(255,255,255,.72), rgba(244,251,253,.94)),
+    radial-gradient(circle at 50% 0%, rgba(131,227,239,.12), transparent 55%);
+}
+
+.bagian--gelap {
+  background:
+    radial-gradient(circle at 50% 20%, rgba(131,227,239,.20), transparent 55%),
+    linear-gradient(145deg, #073443, #0b6075, #062532);
+}
+
+.bagian--gelap::before,
+.bagian--gelap::after {
+  opacity: .5;
+}
+
+/* ---------- Cards ---------- */
+.acara,
+.rekening {
+  border: 1px solid rgba(11,96,117,.14);
+  border-radius: 18px;
+  background: rgba(255,255,255,.72);
+  box-shadow:
+    0 20px 45px rgba(11,96,117,.10),
+    inset 0 1px 0 rgba(255,255,255,.95);
+  backdrop-filter: blur(8px);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.acara:hover,
+.rekening:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 25px 55px rgba(11,96,117,.15),
+    inset 0 1px 0 rgba(255,255,255,.98);
+}
+
+.acara__jam,
+.rekening__bank {
+  color: var(--ice-deep);
+}
+
+/* ---------- Countdown ---------- */
+.jam__unit {
+  border: 1px solid rgba(194,243,248,.28);
+  border-radius: 14px;
+  background: rgba(255,255,255,.045);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+/* ---------- Buttons ---------- */
+.tombol {
+  box-shadow: 0 9px 22px rgba(11,96,117,.10);
+}
+
+.tombol--utama {
+  background: linear-gradient(135deg, #bff3f7, #6fd4e3);
+  color: #073443;
+  border-color: rgba(255,255,255,.35);
+}
+
+.tombol--utama:hover {
+  background: linear-gradient(135deg, #d8f9fb, #83e3ef);
+  transform: translateY(-2px);
+}
+
+.tombol--garis {
+  border-color: rgba(11,96,117,.22);
+  color: var(--ice-deep);
+}
+
+.tombol--garis:hover {
+  border-color: var(--ice-deep);
+  color: var(--ice-deep);
+  background: rgba(131,227,239,.08);
+}
+
+.tombol--terang {
+  border-color: rgba(194,243,248,.48);
+  color: var(--ice-soft);
+}
+
+/* ---------- Form ---------- */
+.form__input {
+  border-radius: 12px;
+  border-color: rgba(11,96,117,.16);
+  background: rgba(255,255,255,.86);
+  box-shadow: inset 0 1px 3px rgba(11,96,117,.035);
+}
+
+.form__input:focus {
+  border-color: var(--ice-deep);
+  box-shadow: 0 0 0 3px rgba(131,227,239,.18);
+}
+
+.pilihan__opsi span {
+  border-radius: 10px;
+}
+
+.pilihan__opsi input:checked + span {
+  background: var(--ice-deep);
+  border-color: var(--ice-deep);
+}
+
+/* ---------- Music + navigation ---------- */
+.musik {
+  border-color: rgba(131,227,239,.45);
+  background: #083847;
+  color: var(--ice);
+  box-shadow: 0 10px 25px rgba(0,0,0,.22);
+}
+
+.navigasi {
+  background: rgba(6,37,50,.96);
+  border-top-color: rgba(131,227,239,.20);
+  backdrop-filter: blur(12px);
+}
+
+.navigasi__tautan.aktif {
+  color: var(--ice);
+}
+
+.notif {
+  background: #0b6075;
+  box-shadow: 0 12px 30px rgba(7,52,67,.25);
+}
+
+/* ---------- Floating petals ---------- */
+.undangan::before {
+  content: "✦";
+  position: fixed;
+  top: 18%;
+  left: calc(50% - 245px);
+  color: rgba(131,227,239,.38);
+  font-size: 1.3rem;
+  z-index: 5;
+  pointer-events: none;
+  animation: premiumFloat 6s ease-in-out infinite;
+}
+
+.undangan::after {
+  content: "❀";
+  position: fixed;
+  top: 65%;
+  right: calc(50% - 245px);
+  color: rgba(131,227,239,.35);
+  font-size: 1.5rem;
+  z-index: 5;
+  pointer-events: none;
+  animation: premiumFloat 7s ease-in-out infinite reverse;
+}
+
+@keyframes premiumFloat {
+  0%,100% { transform: translateY(0) rotate(0deg); opacity: .45; }
+  50% { transform: translateY(-12px) rotate(8deg); opacity: .85; }
+}
+
+/* subtle ornamental dividers */
+.pemisah {
+  color: var(--ice-deep);
+}
+
+.pemisah::before,
+.pemisah::after {
+  background: linear-gradient(var(--kertas), rgba(123,216,232,.65));
+}
+
+.pemisah::after {
+  background: linear-gradient(rgba(123,216,232,.65), var(--kertas));
+}
+
+.footer {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(131,227,239,.14), transparent 45%),
+    #071f2a;
+}
+
+/* mobile tuning */
+@media (max-width: 30rem) {
+  .bagian::before,
+  .bagian::after {
+    width: 78px;
+    height: 78px;
+    opacity: .58;
+  }
+
+  .undangan::before { left: 3%; }
+  .undangan::after { right: 3%; }
+}
+/* REAL FLORAL ILLUSTRATIONS */
+.sampul,.hero,.bagian{overflow:hidden;}
+.sampul::before,.sampul::after,.hero::before,.hero::after,.bagian::before,.bagian::after{content:none!important;}
+.sampul::after{content:""!important;position:absolute;inset:0;z-index:4;pointer-events:none;background:url("assets/floral-corner-left.svg") left -10px top -8px/230px auto no-repeat,url("assets/floral-corner-right.svg") right -10px bottom -8px/230px auto no-repeat;}
+.sampul::before{content:""!important;position:absolute;inset:0;z-index:3;pointer-events:none;background:url("assets/floral-corner-left.svg") right -35px top 35%/105px auto no-repeat;transform:scaleX(-1);opacity:.35;}
+.hero::after{content:""!important;position:absolute;inset:0;z-index:0;pointer-events:none;background:url("assets/floral-corner-left.svg") left -35px top -45px/175px auto no-repeat,url("assets/floral-corner-right.svg") right -35px bottom -45px/175px auto no-repeat;opacity:.7;}
+.bagian::after{content:""!important;position:absolute;inset:0;z-index:0;pointer-events:none;background:url("assets/floral-corner-left.svg") left -55px top -65px/140px auto no-repeat,url("assets/floral-corner-right.svg") right -55px bottom -65px/140px auto no-repeat;opacity:.42;}
+.pemisah::before{content:""!important;position:absolute;left:50%;top:50%;width:230px;height:50px;transform:translate(-50%,-50%);background:url("assets/floral-divider.svg") center/contain no-repeat;opacity:.9;}
+.pemisah::after{content:none!important;}
+.pemisah span{position:relative;z-index:2;background:rgba(255,255,255,.92);}
+.undangan .petal-illustration{position:fixed;inset:0;z-index:150;pointer-events:none;overflow:hidden;}
+.undangan .petal-illustration::before,.undangan .petal-illustration::after{content:"";position:absolute;width:20px;height:28px;background:url("assets/petal.svg") center/contain no-repeat;opacity:.55;}
+.undangan .petal-illustration::before{left:7%;top:34%;animation:petal1 9s ease-in-out infinite;}
+.undangan .petal-illustration::after{right:8%;top:62%;animation:petal2 11s ease-in-out infinite;}
+@keyframes petal1{0%,100%{transform:translate(0,0) rotate(0);opacity:.2}50%{transform:translate(25px,50px) rotate(120deg);opacity:.75}}
+@keyframes petal2{0%,100%{transform:translate(0,0) rotate(20deg);opacity:.2}50%{transform:translate(-30px,-45px) rotate(-100deg);opacity:.65}}
+@media(max-width:30rem){.sampul::after{background-size:160px auto,160px auto}.hero::after{background-size:125px auto,125px auto}.bagian::after{background-size:105px auto,105px auto}.pemisah::before{width:185px}}
